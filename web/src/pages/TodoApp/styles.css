@@ -1,0 +1,143 @@
+.todo_container {
+  margin: 30px 22%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.25);
+}
+
+.todo_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  border-radius: 10px 10px 0 0;
+  color: white;
+  padding: 20px 0;
+}
+
+.todo_header div {
+  display: flex;
+}
+
+.todo_header div h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.todo_list {
+  padding: 20px 30px;
+}
+
+.todo_list li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo_list li div input {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.todo_list li button {
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  outline: none;
+  cursor: pointer;
+}
+
+.todo_list li div .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.todo_list li div .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.todo_list li div .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 3px;
+  border: 2px solid var(--primary-color);
+}
+
+.todo_list li div .container input:checked ~ .checkmark {
+  background-color: var(--primary-color);
+}
+
+.todo_list li div .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.todo_list li div .container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.todo_list li div .container .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.todo_form {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+.todo_form input {
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  flex-grow: 2;
+  margin-right: 30px;
+  outline: none;
+  padding: 0 20px;
+  color: var(--text-color);
+}
+
+.todo_form input::placeholder {
+  font-size: 14px;
+  color: var(--text-color);
+  opacity: 50%;
+}
+
+.todo_form button {
+  height: 40px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: var(--primary-color);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}

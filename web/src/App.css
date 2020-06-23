@@ -1,0 +1,23 @@
+:root {
+  --primary-color: #FDA14E;
+  --text-color: #524055;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  color: var(--text-color);
+}
+
+.App {
+  background: url('./assets/bg_img.svg') 70px 130px no-repeat;
+  background-size: 90%;
+  height: 100vh;
+}

@@ -1,0 +1,40 @@
+.h-container {
+  padding: 20px 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.h-container::after{
+  content: " ";
+  height: 1px;
+  width: 1000px;
+  background: rgba(0,0,0, 0.1);
+  position: absolute;
+  top: 78px;
+  left: 160px;
+}
+
+.logo img {
+  height: 25px;
+}
+
+.about {
+  text-decoration: none;
+  color: var(--text-color);
+  margin-right: 30px;
+}
+
+.btn_login {
+  height: 40px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: var(--primary-color);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
