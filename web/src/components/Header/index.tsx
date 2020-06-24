@@ -10,7 +10,7 @@ const Header = () => {
       </a>
       <div>
         <a href="/about" className="about">about</a>
-        <button className="btn_login">Sign In</button>
+        <button className="btn_login">Sign in</button>
       </div>
     </header>
   )

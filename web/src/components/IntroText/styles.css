@@ -3,16 +3,53 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 35px;
+  margin-bottom: 50px;
 }
 
 .intro_text h1 {
   font-family: Raleway, sans-serif;
-  font-size: 32px;
+  font-size: 38px;
 }
 
 .intro_text p {
   margin-top: 10px;
   text-align: center;
-  font-size: 16px;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 1440px){
+  .intro_text h1 {
+    font-size: 36px;
+  }
+
+  .intro_text p {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 834px){
+  .intro_text h1 {
+    font-size: 30px;
+  }
+
+  .intro_text p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 450px){
+  .intro_text {
+    padding: 10px 20px;
+  }
+
+  .intro_text h1 {
+    font-size: 22px;
+  }
+
+  .intro_text p {
+    margin-top: 20px;
+    max-width: 350px;
+    font-size: 16px;
+  }
 }

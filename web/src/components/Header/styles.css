@@ -1,5 +1,6 @@
 .h-container {
-  padding: 20px 100px;
+  padding: 20px 250px;
+  padding-bottom: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -9,15 +10,15 @@
 .h-container::after{
   content: " ";
   height: 1px;
-  width: 1000px;
+  width: 1300px;
   background: rgba(0,0,0, 0.1);
   position: absolute;
-  top: 78px;
-  left: 160px;
+  top: 85px;
+  left: 290px;
 }
 
 .logo img {
-  height: 25px;
+  height: 30px;
 }
 
 .about {
@@ -27,14 +28,81 @@
 }
 
 .btn_login {
+  font-family: Montserrat, sans-serif;
   height: 40px;
   width: 100px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   outline: none;
   background: var(--primary-color);
   color: white;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1800px) {
+  .h-container::after{
+    width: 1000px;
+  }
+}
+
+@media only screen and (max-width: 1600px){
+  .h-container::after{
+    width: 900px;
+  }
+}
+
+@media only screen and (max-width: 1440px){
+  .h-container {
+    padding: 20px 100px;
+  }
+
+  .h-container::after{
+    width: 1000px;
+    top: 78px;
+    left: 160px;
+  }
+
+  .logo img {
+    height: 25px;
+  }
+}
+
+@media only screen and (max-width: 834px){
+  .h-container {
+    padding: 20px 40px;
+  }
+
+  .h-container::after{
+    width: 620px;
+    top: 78px;
+    left: 100px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .h-container {
+    padding: 20px 20px;
+  }
+
+  .h-container::after{
+    width: 320px;
+    top: 80px;
+    left: 50px;
+  }
+
+  .logo img {
+    height: 20px;
+  }
+
+  .about {
+    font-size: 16px;
+  }
+
+  .btn_login {
+    height: 30px;
+    width: 80px;
+    font-size: 14px;
+  }
 }
